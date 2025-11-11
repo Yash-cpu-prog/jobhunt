@@ -1,0 +1,319 @@
+/* 🌐 GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* 🔹 HEADER / NAVBAR */
+header {
+  background: #1e293b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #38bdf8;
+}
+
+/* 🔹 HERO SECTION (Home Page) */
+.hero {
+  background: linear-gradient(120deg, #dbeafe, #eff6ff);
+  padding: 80px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #475569;
+}
+
+.hero-text button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: #1d4ed8;
+}
+
+/* 🔹 ABOUT SECTION */
+.about-section {
+  padding: 80px 50px;
+  background: white;
+  text-align: center;
+}
+
+.about-content h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #475569;
+}
+
+.about-content ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.about-content li {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #334155;
+}
+
+/* 🔹 IMAGE SECTION */
+.images-section {
+  padding: 80px 50px;
+  background: #f0f9ff;
+  text-align: center;
+}
+
+.images-section h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.image-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 380px;
+  transition: 0.3s;
+}
+
+.image-card:hover {
+  transform: translateY(-8px);
+}
+
+.image-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.image-card p {
+  padding: 15px;
+  color: #475569;
+}
+
+/* 🔹 JOBS PAGE */
+.search-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #eff6ff;
+}
+
+.search-section h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+#searchInput {
+  padding: 12px 20px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #94a3b8;
+}
+
+.filters {
+  margin-top: 20px;
+}
+
+.filters button {
+  background: white;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button:hover,
+.filters button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* 🔹 JOB LISTINGS */
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 40px 50px;
+}
+
+.job-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  color: #1e3a8a;
+  font-size: 1.4rem;
+}
+
+.job-card p {
+  color: #475569;
+  margin: 8px 0;
+}
+
+.apply-btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: #1d4ed8;
+}
+
+/* 🔹 RESUME UPLOAD SECTION */
+.resume-upload {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+
+.resume-upload h2 {
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.resume-upload p {
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.resume-upload input[type="file"] {
+  padding: 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 8px;
+  background: white;
+}
+
+.resume-upload button {
+  margin-left: 10px;
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-upload button:hover {
+  background: #1d4ed8;
+}
+
+/* 🔹 FOOTER */
+footer {
+  text-align: center;
+  background: #1e293b;
+  color: white;
+  padding: 18px;
+  font-size: 0.95rem;
+}
+
+footer span {
+  color: #38bdf8;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .image-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+

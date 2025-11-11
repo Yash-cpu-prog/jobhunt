@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f7f8fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 18px 40px;
+}
+
+header h1 {
+  font-size: 26px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(to right, #9ba8ba, #3e4954);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about-hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Cards Section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 40px;
+}
+
+.about-card {
+  background: white;
+  width: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+}
+
+.about-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.about-card h3 {
+  margin-top: 15px;
+  color: #004aad;
+}
+
+.about-card p {
+  padding: 15px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer span {
+  color: #ffcc00;
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Frontend Developer",
+    "company": "Tech Innovators",
+    "location": "Pune",
+    "type": "Full-time",
+    "description": "Work with HTML, CSS, JavaScript, and React to build amazing user interfaces."
+  },
+  {
+    "title": "Backend Developer",
+    "company": "CodeWorks",
+    "location": "Mumbai",
+    "type": "Full-time",
+    "description": "Build scalable REST APIs using Node.js and MongoDB."
+  },
+  {
+    "title": "AI Research Intern",
+    "company": "AI Labs",
+    "location": "Bangalore",
+    "type": "Internship",
+    "description": "Assist in building AI models using Python and TensorFlow."
+  }
+]
+
+

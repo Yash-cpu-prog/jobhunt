@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Listings - JobHunt</title>
+  <link rel="stylesheet" href="css/jobs.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">JobHunt</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="jobs.html" class="active">Jobs</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Job Section -->
+  <section class="job-section">
+    <h2>Explore Latest Jobs</h2>
+
+    <!-- Search -->
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="🔍 Search jobs by title or company..." />
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="remote">Remote</button>
+      <button class="filter-btn" data-category="fulltime">Full-time</button>
+      <button class="filter-btn" data-category="internship">Internship</button>
+    </div>
+
+    <!-- Resume Upload -->
+    <div class="upload-box">
+      <label for="resumeUpload" class="upload-label">📄 Upload Your Resume:</label>
+      <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx" />
+    </div>
+
+    <!-- Job Count -->
+    <p class="job-count" id="jobCount"></p>
+
+    <!-- Job List -->
+    <div class="job-list" id="jobList"></div>
+    <p class="no-results" id="noResults" style="display:none;">No matching jobs found.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>© 2025 JobHunt | All Rights Reserved.</footer>
+
+  <script src="js/jobs.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

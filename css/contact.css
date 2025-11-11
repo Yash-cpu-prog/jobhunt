@@ -1,0 +1,171 @@
+/* -------------------------
+   Global Styles
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: transparent;
+}
+
+/* -------------------------
+   Navbar
+-------------------------- */
+.navbar {
+  background: linear-gradient(90deg, #222, #333);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffe082;
+}
+
+/* -------------------------
+   Contact Section
+-------------------------- */
+.contact-section {
+  max-width: 650px;
+  margin: 70px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  color: #0a66c2;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #004182;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #0a66c2;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #004182;
+  box-shadow: 0 0 10px rgba(10, 102, 194, 0.25);
+}
+
+/* -------------------------
+   Submit Button
+-------------------------- */
+.submit-btn {
+  background: linear-gradient(90deg, #0a66c2, #004182);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #004182, #002a63);
+  transform: scale(1.02);
+}
+
+/* -------------------------
+   Status Message
+-------------------------- */
+.status {
+  margin-top: 15px;
+  text-align: center;
+  color: #0a66c2;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* -------------------------
+   Footer
+-------------------------- */
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #222, #333);
+  color: white;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------
+   Responsive Design
+-------------------------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .contact-section {
+    margin: 40px 20px;
+    padding: 30px 20px;
+  }
+}
+
